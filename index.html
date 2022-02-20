@@ -29,70 +29,94 @@
             <li><a href="./form/">Form</a></li>
         </ul>
     </nav>
-    <header>
-        <h1>Clear Horizon Window Cleaning</h1>
-    </header>
-<main>
-    <article class="container">
-        <h2>Our Mission:</h2>
-        <p>
-            At Clear Horizon, we are the one-stop solution to all of your exterior and 
-            interior window cleaning needs. We offer services that exceed our customers’ 
-            expectations at a reasonable price.
-        </p>
-        <a href="#" class="button">Learn More</a>
-    </article>
-</main>
-    <!--Here are the changing images or HERO image.-->
-    <picture>  
-        <source srcset="images/1600w-window.jpg" 
-               media="(min-width: 901px)">
-        <source srcset="images/900w-window.jpg" 
-               media="(min-width: 501px)">
-        <source srcset="images/500w-window.jpg"
-               media="(max-width: 500px)">
-               
-        <img src="images/900w-window.jpg" 
-               alt="Image of an open window">
+    <!-- <header>
+        
+    </header> -->
 
-     </picture>
-    <aside>
+    <!--Here are the changing images or HERO image.-->
+    <div class="hero">
+        <picture>  
+            <source srcset="images/1600w-window.jpg" 
+                media="(min-width: 901px)">
+            <source srcset="images/900w-window.jpg" 
+                media="(min-width: 501px)">
+            <source srcset="images/500w-window.jpg"
+                media="(max-width: 500px)">
+                
+            <img src="images/900w-window.jpg" 
+                alt="Image of an open window">
+
+        </picture>
+        <div class="text-wrapper">
+            <h1>Clear Horizon Window Cleaning</h1>
+            <p>One stop solution to all your window needs!</p>
+        </div>
+    </div>
+    <!-- <aside>
         <figure>
             <img src="images/clearHorizonsLogo.svg" alt="Image of the Company Logo" class="logo">
             <figcaption>Clear Horizons Logo</figcaption> 
         </figure>
-    </aside>
+    </aside> -->
 <main>
+    <article class="container">
+            <h2>Our Mission:</h2>
+            <p>
+                At Clear Horizon, we are the one-stop solution to all of your exterior and 
+                interior window cleaning needs. We offer services that exceed our customers’ 
+                expectations at a reasonable price.
+            </p>
+    </article>
     <article>
         <h2>Our Services:</h2>
         <!--Ordered List-->
-        <ol class="columns">
-            <li>Outdoor wash
-                <!--Nested lists-->
-                <ul>
-                    <!--list options-->
-                    <li>20+ Windows</li>
-                    <li>50+ Windows</li>
-                    <li>80+ Windows</li>
-                </ul>
-            </li>
-            <li>Indoor wash
-                <ul>
-                    <!--list options-->
-                    <li>20+ Windows</li>
-                    <li>50+ Windows</li>
-                    <li>80+ Windows</li>
-                </ul>
-            </li>
-            <li>Both outdoor and indoor wash
-                <ul>
-                    <!--list options-->
-                    <li>20+ Windows</li>
-                    <li>50+ Windows</li>
-                    <li>80+ Windows</li>
-                </ul>
-            </li>
-        </ol>
+        <div class="cards">
+            <div class="row">
+            <div class="card"> 
+                <div class="column">
+                <a>
+                <img src="images/windowCleaners.jpg" width="200px" height="200px" loading="lazy" alt="Picture many employee's">
+                <p class="text-wrapper">
+                  Employee's
+                </p>
+              </a>
+            </div>
+            </div>
+
+            <div class="card">
+                <div class="column">
+                    <a>
+                    <img src="images/windowWashing2.jpg" width="200px" height="200px" loading="lazy" alt="picture of window cleaner">
+                    <p class="text-wrapper">
+                        Projects
+                    </p>
+                    </a>
+                </div>
+              </div>
+
+            <div class="card">
+                <div class="column">
+                <a>
+                  <img src="images/widowWashing3.jpg" width="200px" height="200px" loading="lazy" alt="picture of window">
+                  <p class="text-wrapper">
+                    FAQ'S
+                  </p>
+                </a>
+            </div>
+            </div>
+
+            <div class="card">
+                <div class="column">
+                <a>
+                  <img src="images/windowCleaners2.jpg" width="200px" height="200px" loading="lazy" alt="picture of employee">
+                  <p class="text-wrapper">
+                    Contact Us
+                  </p>
+                </a>
+                </div>
+              </div>
+            </div>
+        </div>
         <a href="#" class="button">Click Here for Your Free Quote</a>
     </article>
     
