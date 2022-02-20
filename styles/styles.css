@@ -196,6 +196,7 @@ img {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     /* transform: scale(1.2); */
     filter: none;
+    transition-property: background;
     transition: filter .3s ease-out, transform 500ms ease;
     /* color: black; */
 
