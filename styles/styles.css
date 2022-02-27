@@ -214,3 +214,34 @@ img {
     right: 0;
     top: 7rem;
 }
+
+
+body.form{
+    background-color: white;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  }
+
+  .form img {
+      width: 300px;
+  }
+  
+  .loader {
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    border: 16px solid #fb7f058f;
+    border-left: 16px solid #fb7f05;
+    animation: load 1000ms infinite linear;
+}
+
+@keyframes load {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
