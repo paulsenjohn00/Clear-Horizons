@@ -65,24 +65,29 @@ h3 {
     font-weight: bolder;
     text-decoration: none;
     list-style: none;
+    align-items: center;
     /* text-align: center; */
     /* transition: transform 100ms; */
 
 }
 
+.translate:hover {
+    transform: translate(1px, 1px);
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
 .navbar a {
     /* text-align: center; */
     padding: 2rem;
     margin: 0 auto;
 }
 
-.navbar a:hover{
-    text-decoration: underline;
-    transform: translate(1px,1px);
-}
 a:visited{
     color: rgb(43, 24, 110);
 } 
+
 
 body{
     background-color: white;
@@ -128,7 +133,7 @@ img {
     border: 1px solid #1e285c;
     cursor: pointer;
     text-align: center;
-    margin-top: 9rem;
+    /* margin-top: 12rem; */
   }
   
   .button:hover {
@@ -146,8 +151,6 @@ img {
     padding: 1em;
     border-radius: 100px;
     border: 1px solid #F38630;
-  }
-  .button:active {
     transform: translate(1px, 1px);
   }
 
