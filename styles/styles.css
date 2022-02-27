@@ -9,6 +9,7 @@
 
 .hero {
     position: relative;
+    
 }
 .hero .text-wrapper {
     position:absolute;
@@ -17,8 +18,8 @@
     right: 0;
     top:0;
     
-    font-family: "Arvo", serif;
-    color: #F38630;
+    /* font-family: "Arvo", serif;
+    color: #F38630; */
     background: linear-gradient(to top, rgba(0,0,0,.4), transparent)
   }
   
@@ -26,15 +27,17 @@
     margin: 0;
     margin-top: 5em;
     line-height: 3rem;
-    font-size: 3rem;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6); 
+    font-size:50pt;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8); 
     letter-spacing: 2px;
   }
   
   .hero p {
     font-size: 1.5rem;
-    margin: 0;
+    /* margin: 0; */
+    color: #F38630;
     margin-top: .5em;
+    position: relative;
     text-align: center;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6); 
     font-weight: bold;
@@ -55,34 +58,31 @@ h3 {
     color: #F38630;
 }
 
-.container {
-    max-width: 70rem;
-    margin: 0 auto;
-}
-
-.navbar ul{
-    display: inline-flex;
-    padding: 2rem 3rem; 
+    
+ .navbar ul{
+    display: inline-flex; 
     font-size: large;
     font-weight: bolder;
     text-decoration: none;
     list-style: none;
-    text-align: center;
-    
+    /* text-align: center; */
+    /* transition: transform 100ms; */
+
 }
 
 .navbar a {
-    text-align: center;
+    /* text-align: center; */
     padding: 2rem;
     margin: 0 auto;
 }
 
 .navbar a:hover{
     text-decoration: underline;
+    transform: translate(1px,1px);
 }
 a:visited{
     color: rgb(43, 24, 110);
-}
+} 
 
 body{
     background-color: white;
@@ -147,8 +147,11 @@ img {
     border-radius: 100px;
     border: 1px solid #F38630;
   }
-  
-.logo {
+  .button:active {
+    transform: translate(1px, 1px);
+  }
+
+  .logo {
     width: 300px;
     float: right;
 }
@@ -196,10 +199,9 @@ img {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     /* transform: scale(1.2); */
     filter: none;
-    transition-property: background;
-    transition: filter .3s ease-out, transform 500ms ease;
+    transition: filter .3s ease-in-out, transform 500ms ease;
+    transform: translate(0px, -10px);
     /* color: black; */
-
 }
 
 .text-wrapper {
