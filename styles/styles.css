@@ -6,43 +6,52 @@
     'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: white;
+    line-height: 2rem;
+}
+
 .hero {
     position: relative;
-    
+
 }
+
 .hero .text-wrapper {
-    position:absolute;
+    position: absolute;
     left: 0rem;
     bottom: 0rem;
     right: 0;
-    top:0;
-    background: linear-gradient(to top, rgba(0,0,0,.4), transparent)
-  }
-  
-  .hero h1 {
-    /* display: flex;
-    align-self: center;
-    justify-self: center; */
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(to top, rgba(0, 0, 0, .4), transparent)
+}
+
+.hero h1 {
     margin: 0;
-    margin-top: 5em;
-    line-height: 3rem;
-    font-size:50pt;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8); 
+    line-height: 1;
+    font-size: clamp(2rem,6vw,4rem);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
     letter-spacing: 2px;
-  }
-  
-  .hero p {
+}
+
+.hero p {
     font-size: 1.5rem;
     /* margin: 0; */
     color: #F38630;
     margin-top: .5em;
     position: relative;
     text-align: center;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6); 
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
     font-weight: bold;
     padding: 0 2rem;
-  }
-  
+}
+
 h1 {
     padding: 0 2rem;
     text-align: center;
@@ -57,8 +66,8 @@ h3 {
     color: #F38630;
 }
 
-    
- .navbar ul{
+
+.navbar ul {
     display: flex;
     justify-content: space-around;
     /* border: solid rgb(43, 24, 110); */
@@ -85,29 +94,27 @@ h3 {
     text-decoration: underline;
 } */
 
-a:visited{
+a:visited {
     color: rgb(43, 24, 110);
-} 
-
-
-body{
-    background-color: white;
-    margin: auto 2rem;
-    line-height: 2rem;
 }
+
 
 main {
     margin: 0 auto;
     padding: 0 1rem;
     max-width: 50rem;
-  }
+}
 
-h2, h3, p {
+h2,
+h3,
+p {
     /* max-width: 60rem; */
     margin: 2rem 2rem;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     line-height: 1.7rem;
 }
 
@@ -116,14 +123,13 @@ p {
 }
 
 img {
-    /* display: block; */
+    display: block;
     width: 100%;
     height: auto;
 }
 
 .button {
-    display: flex;
-    justify-self: center;
+    display: flexbox;
     background-color: #F38630;
     color: #1e285c;
     padding: 1em;
@@ -131,18 +137,17 @@ img {
     border: 1px solid #1e285c;
     cursor: pointer;
     text-align: center;
-    /* margin-top: 12rem; */
-  }
-  
-  .button:hover {
+    text-decoration: none;
+}
+
+.button:hover {
     background-color: #1e285c;
     color: #F38630;
     border: 1px solid #F38630;
-    transform: scale(1.2);
     transition: background-color .3s ease-out, transform 500ms ease;
-  }
-  
-  .button:active {
+}
+
+.button:active {
     background-color: #69D2E7;
     color: #F38630;
     text-decoration: none;
@@ -150,96 +155,81 @@ img {
     border-radius: 100px;
     border: 1px solid #F38630;
     transform: translate(1px, 1px);
-  }
-
-  /* .logo {
-    width: 300px;
-    float: right;
-} */
+}
 
 .cards {
     display: flex;
+    gap: 1rem;
     flex-direction: column;
     cursor: pointer;
-    align-content: center;
-    /* position: relative;
-    text-align: center;
-    color: black;
-    width: 300px;
-    /* padding: 2rem; */
+    
+    margin-bottom: 4rem;
 }
 
 .card {
-    align-content: center;
-    justify-content: center;
     filter: grayscale(100%);
     border-radius: 10px;
-    width: 300px;
-    /* margin-top: 1rem; */
-    /* padding: 2rem; */
+    position: relative;
+}
+
+.card .image-wrapper {
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .card img {
-    display: flex;
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px;
-    /* margin-top: 20px; */
+    transition: transform 400ms;
 }
 
 .card p {
-    /* color: black; */
-    font-weight: bolder;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2rem;
     position: absolute;
-    text-align: center;
     left: 0;
-    top: 1rem;
-}
-
-/* .top-left {
-    position: absolute;
-    bottom: 0px;
-    font-size: 2rem;
-    font-weight: bolder;
-} */
-
-.card:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    /* transform: scale(1.2); */
-    filter: none;
-    transition: filter .3s ease-in-out, transform 500ms ease;
-    transform: translate(0px, -10px);
-    /* color: black; */
-}
-
-/* .text-wrapper {
-    position: absolute;
-    left: 0rem;
-    bottom: 1rem;
     right: 0;
-    top: 7rem;
-} */
+    top: 0;
+    bottom: 0;
 
-
-body.form{
-    background-color: white;
-    display: inline-flexbox;
+    display: flex;
     align-items: center;
     justify-content: center;
-    height: 80vh;
-  }
 
-  .form img {
+    text-shadow:  1px 1px 2px rgba(0, 0, 0, .4);
+    
+    font-weight: bolder;
+    color: white;
+    font-size: clamp(1.6rem, 10vw, 3rem);
+    margin: 0;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    filter: none;
+    transition: filter .3s ease-in-out, transform 500ms ease;
+}
+
+.card:hover img {
+   transform: scale(1.1);
+}
+
+
+body.form {
+    background-color: white;
+    display: inline-flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.form img {
     width: 300px;
-  }
-  
-  .loader {
+}
+
+.loader {
     display: flex;
-    align-self: center;
-    text-align: center;
-    justify-self: center;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
-    /* position: relative; */
     width: 8rem;
     height: 8rem;
     border: 16px solid #fb7f058f;
@@ -249,17 +239,22 @@ body.form{
 
 @keyframes load {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
 
-@media (min-width: 800px) {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 500px) {
     .cards {
         flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    .cards p {
+        font-size: clamp(1.6rem, 6vw, 3rem);
     }
 
     .card {
@@ -271,6 +266,11 @@ body.form{
     .cards {
         flex-wrap: nowrap;
     }
+
+    .cards p {
+        font-size: clamp(1.3rem, 2vw, 3rem)
+    }
+
     .card {
         flex: 1 1 20%;
     }
