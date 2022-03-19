@@ -54,9 +54,7 @@ h3 {
 } */
 
 
-a:visited {
-    color: rgb(43, 24, 110);
-}
+
 
 
 main {
@@ -152,7 +150,7 @@ main {
     align-items: center;
     justify-content: center;
   
-    z-index: 1;
+    z-index: 2;
   }
   
   .main-menu .menu-icon:hover {
@@ -352,11 +350,13 @@ nav {
   
     display: flex;
   
-   background-color: #1e285c;
+   background-color: #161618;
   
    transform: translateX(100vw);
   
    transition: transform 300ms;
+
+   z-index: 1;
   }
   
   .menu-show nav {
@@ -365,6 +365,7 @@ nav {
   }
   
   nav ul {
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -379,14 +380,21 @@ nav {
     padding: 1rem;
     font-size: 1.4rem;
     color: white;
+    text-decoration: none;
   }
   
+  a:visited {
+    color: white;
+    text-decoration: none;
+}
+
   nav a:not([href]) {
-    color: lightslategrey;
+    color: white;
   }
   
   nav a[href]:hover {
     color: lightslategrey;
+
   }
 
 @keyframes load {
@@ -442,7 +450,11 @@ nav {
         display: block;
         padding: 1rem;
         font-size: 1.4rem;
-        color: blue;
+        color: #1e285c;
+      }
+
+      nav a:visited {
+        color: #1e285c;
       }
       
       nav a:not([href]) {
