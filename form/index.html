@@ -22,14 +22,23 @@
 </head>
 
 <body class="form">
-    <nav class="navbar">
-        <ul>
-            <li><a href="../">Home</a></li>
-            <li><a href="../about/">About</a></li>
-            <li><a href="../contact/">Contact</a></li>
-            <li><a>Form</a></li>
-        </ul>
-    </nav>
+    <div class="main-menu">
+        <div class="menu-icon">
+            <svg viewbox="0 0 60 60" width="60px" height="60px">
+                <line x1="5%" y1="50%" x2="95%" y2="50%" />
+                <line x1="5%" y1="50%" x2="95%" y2="50%" />
+            </svg>
+        </div>
+
+        <nav>
+            <ul>
+                <li class="translate"><a>Home</a></li>
+                <li class="translate"><a href="../about/index.html">About</a></li>
+                <li class="translate"><a href="../contact/index.html">Contact</a></li>
+                <li class="translate"><a href="../form/index.html">Form</a></li>
+            </ul>
+        </nav>
+    </div>
     <header>
         <h1>Form</h1>
     </header>
@@ -41,6 +50,14 @@
             <figcaption>Clear Horizons Logo SVG</figcaption>
         </figure>
     </article>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            document.querySelector(".menu-icon").addEventListener("click", () => {
+                document.querySelector(".main-menu").classList.toggle("menu-show");
+            });
+        });
+    </script>
 
 </body>
 
