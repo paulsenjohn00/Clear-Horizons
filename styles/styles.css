@@ -316,7 +316,7 @@ aside {
 
 body.form {
     background-color: white;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     height: 80vh;
 }
@@ -325,7 +325,7 @@ body.form {
     width: 300px;
 }
 
-.loader {
+.form div.loader {
     display: flex;
     justify-content: center;
     align-items: center;
